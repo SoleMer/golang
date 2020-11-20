@@ -9,13 +9,11 @@ func main() {
 	cfg, err := config.LoadConfig("config.yaml")
 
 	if err != nil {
-		return nil, err
+		fmt.Println(err.Error)
+		os.Exit(1)
 	}
 
-	var c := &Config{}
-	err = yaml.Umarshal(file, c)
-	if err!= nil {
-		return nil, err
-	}
-	return c, nil
+	fmt.Println(cfg.DB.Driver)
+	fmt.Println(cfg.Version)
+
 }

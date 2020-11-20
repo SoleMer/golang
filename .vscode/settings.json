@@ -1,0 +1,7 @@
+{
+    "editor.codeActionsOnSave":{},
+    "editor.quickSuggestions": true,
+    "editor.suggest.showStatusBar": true,
+    "editor.suggestSelection": "first",
+    "go.autocompleteUnimportedPackages": true,
+}
